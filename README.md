@@ -10,7 +10,7 @@ The [Google Analytics](http://analytics.google.com) tracking script must be inst
 
 Include ```ReferralGrabber.php``` in your PHP code, and then call ```$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);```  
 
-The returned ```$data``` array will contain a map of the keys (source, medium, term, content, campaign, gclid) and their respective values.
+The returned ```$data``` array will be a map of the keys ```source```, ```medium```, ```term```, ```content```, ```campaign```, ```gclid``` and their respective values.
 
 Recommendations
 --------------- 
