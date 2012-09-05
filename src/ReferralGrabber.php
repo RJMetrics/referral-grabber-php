@@ -23,12 +23,12 @@ class ReferralGrabber {
 
 	public static function parseGoogleCookie($cookieString) {
 		$data = array();
-		$data['source'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'utmcsr=', '|');
-		$data['medium'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'utmcmd=', '|');
-		$data['term'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'utmctr=', '|');
-		$data['content'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'utmcct=', '|');
-		$data['campaign'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'utmccn=', '|');
-		$data['gclid'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'utmgclid=', '|');
+		$data['source'] = ReferralGrabber::strExtractBetween($cookieString, 'utmcsr=', '|');
+		$data['medium'] = ReferralGrabber::strExtractBetween($cookieString, 'utmcmd=', '|');
+		$data['term'] = ReferralGrabber::strExtractBetween($cookieString, 'utmctr=', '|');
+		$data['content'] = ReferralGrabber::strExtractBetween($cookieString, 'utmcct=', '|');
+		$data['campaign'] = ReferralGrabber::strExtractBetween($cookieString, 'utmccn=', '|');
+		$data['gclid'] = ReferralGrabber::strExtractBetween($cookieString, 'utmgclid=', '|');
 
 		//special provision: gclid will be set alone, but always indicates google cpc
 		if($data['gclid'] != '-') {
@@ -40,12 +40,12 @@ class ReferralGrabber {
 
 	public static function parseHubspotCookie($cookieString) {
 		$data = array();
-		$data['source'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'ptmcsr=', '|');
-		$data['medium'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'ptmcmd=', '|');
-		$data['term'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'ptmctr=', '|');
-		$data['content'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'ptmcct=', '|');
-		$data['campaign'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'ptmccn=', '|');
-		$data['gclid'] = AnalyticsCookieParser::strExtractBetween($cookieString, 'ptmgclid=', '|');
+		$data['source'] = ReferralGrabber::strExtractBetween($cookieString, 'ptmcsr=', '|');
+		$data['medium'] = ReferralGrabber::strExtractBetween($cookieString, 'ptmcmd=', '|');
+		$data['term'] = ReferralGrabber::strExtractBetween($cookieString, 'ptmctr=', '|');
+		$data['content'] = ReferralGrabber::strExtractBetween($cookieString, 'ptmcct=', '|');
+		$data['campaign'] = ReferralGrabber::strExtractBetween($cookieString, 'ptmccn=', '|');
+		$data['gclid'] = ReferralGrabber::strExtractBetween($cookieString, 'ptmgclid=', '|');
 		
 		//special provision: gclid will be set alone, but always indicates google cpc
 		if($data['gclid'] != '-') {
