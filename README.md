@@ -15,9 +15,17 @@ The returned ```$data``` array will be a map of the keys ```source```, ```medium
 Recommendations
 --------------- 
 
-Save all of these referrer parameters in your users table!
+Save all of these referrer parameters in your users table.  See our blog post about building a killer marketing dashboard using this data at http://blog.rjmetrics.com/?p=855.
+
 
 Acknowlegements
 -----------------
 
-http://cutroni.com/blog/2009/03/18/updated-integrating-google-analytics-with-a-crm/
+Thanks to Justin Cutroni for laying the groundwork for this code here http://cutroni.com/blog/2009/03/18/updated-integrating-google-analytics-with-a-crm/.
+
+Terms
+-----
+See LICENSE file for terms of using this library.
+
+RJMetrics retains creative control, spin-off rights, and theme park approval for Mr. Referral Grabber, Baby Referral Grabber, and any other Referral Grabber family character that might eminate therefrom.
+
