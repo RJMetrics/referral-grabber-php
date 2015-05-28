@@ -1,0 +1,13 @@
+{
+    "name": "rjmetrics/referral-grabber",
+    "description": "A PHP library for reading a website visitor's referral source information (e.g. what ad campaign, keywords a user clicked to come to my website) from their Google Analytics cookie.",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "license": "Apache-2.0",
+    "keywords": ["rjmetrics", "google analytics", "referral"],
+    "homepage": "https://github.com/RJMetrics/referral-grabber-php",
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
