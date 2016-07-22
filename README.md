@@ -1,6 +1,8 @@
 referral-grabber-php
 ====================
 
+*DEPRECATED*: this library does not work with installs of Google Analytics using "Universal Analytics"
+
 A PHP library for reading a website visitor's referral source information (e.g. what ad campaign, keywords a user clicked to come to my website) from their Google Analytics cookie.  Useful for saving this information when, for example, a new user signs up on your website, to later analyze your customer acquisition channels.
 
 Usage
